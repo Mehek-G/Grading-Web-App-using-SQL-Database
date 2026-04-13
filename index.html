@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grades Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Student Grades Manager</h1>
+
+<div class="form-section">
+
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="number" id="grade" placeholder="Grade">
+
+    <div class="buttons">
+        <button onclick="getGrade()">Get Grade</button>
+        <button onclick="getAllGrades()">Show All</button>
+        <button onclick="addGrade()">Add</button>
+        <button onclick="editGrade()">Edit</button>
+        <button onclick="deleteGrade()">Delete</button>
+    </div>
+
+</div>
+
+<h2>Grades</h2>
+
+<table id="gradesTable">
+    <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
